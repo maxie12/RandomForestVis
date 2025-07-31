@@ -1,7 +1,10 @@
 # RandomForestVis
 
 This repository contains the code for the Random Forest visual analytics system of the VIS 2025 full paper 
-"Cluster-Based Random Forest Visualization and Interpretation" by Max Sondag, Christofer Meinecke, Dennis Collaris, Tatiana von Landesberger, and Stef van den Elzen.
+"Cluster-Based Random Forest Visualization and Interpretation" by Max Sondag, Christofer Meinecke, Dennis Collaris, Tatiana von Landesberger, and Stef van den Elzen. The arXiv version is available at https://arxiv.org/abs/2507.22665
+
+![Example interface for the Penguins Dataset. Individual trees are shown on the right. Clusters of decision trees are visualized in the middle. Overview of the results and filtering/selecting options are on the left.](RepresentativeFigure.png)
+
 
 ## Backend Dependencies
 (Windows: Do this in Git Bash)
