@@ -1,0 +1,192 @@
+html {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+  /*letter-spacing: -0.3px;*/
+  line-height: 1.6;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  overflow: overlay;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+
+/* Upload Button*/
+input[type="file"] {
+  display: none;
+}
+
+/* Sidebar */
+.sidebar {
+  position: relative;
+  width: 280px;
+  min-width: 280px;
+  height: 100vh;
+  box-shadow:
+    0.4px 0px 0.3px rgba(0, 0, 0, 0.011),
+    1px 0px 0.8px rgba(0, 0, 0, 0.016),
+    1.9px 0px 1.5px rgba(0, 0, 0, 0.02),
+    3.4px 0px 2.7px rgba(0, 0, 0, 0.024),
+    6.3px 0px 5px rgba(0, 0, 0, 0.029),
+    15px 0px 12px rgba(0, 0, 0, 0.04);
+}
+
+.dropdown-toggle {
+  outline: 0;
+}
+
+.btn-toggle {
+  padding: .25rem .5rem;
+  margin-left: -.5rem;
+  font-weight: 600;
+  color: var(--bs-emphasis-color);
+  background-color: transparent;
+}
+
+.btn-toggle:hover,
+.btn-toggle:focus {
+  color: rgba(var(--bs-emphasis-color-rgb), .85);
+  background-color: var(--bs-tertiary-bg);
+}
+
+.btn-toggle::before {
+  width: 1.25em;
+  line-height: 0;
+  content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+  transition: transform .35s ease;
+  transform-origin: .5em 50%;
+}
+
+[data-bs-theme="dark"] .btn-toggle::before {
+  content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%28255,255,255,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+}
+
+.btn-toggle[aria-expanded="true"] {
+  color: rgba(var(--bs-emphasis-color-rgb), .85);
+}
+
+.btn-toggle[aria-expanded="true"]::before {
+  transform: rotate(90deg);
+}
+
+.btn-toggle-nav a {
+  padding: .1875rem .5rem;
+  margin-top: .125rem;
+  margin-left: 1.25rem;
+}
+
+.btn-toggle-nav a:hover,
+.btn-toggle-nav a:focus {
+  background-color: var(--bs-tertiary-bg);
+}
+
+.projection h6,
+.clustering h6 {
+  font-weight: bold;
+  margin-left: 1rem;
+}
+
+/* Feature/class bar charts */
+table.chart tr td:first-child {
+  border-right: 1px solid #000;
+  padding-right: 15px;
+}
+
+table.chart .bar {
+  height: 20px;
+  background: #007bff;
+  margin-left: -1px;
+}
+
+/* Split view */
+.split {
+  display: flex;
+  flex-direction: row;
+}
+
+.gutter {
+  background-color: #eee;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  z-index: 999;
+}
+
+.gutter.gutter-horizontal {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAeCAYAAADkftS9AAAAIklEQVQoU2M4c+bMfxAGAgYYmwGrIIiDjrELjpo5aiZeMwF+yNnOs5KSvgAAAABJRU5ErkJggg==');
+  cursor: col-resize;
+}
+
+#features-collapse {
+  overflow-y: scroll;
+  max-height: 165px;
+  overflow-x: hidden;
+}
+
+#classes-collapse {
+  overflow-y: scroll;
+  max-height: 125px;
+  overflow-x: hidden;
+}
+
+#loading-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Semi-transparent black */
+  z-index: 9998;
+  /* Below the loading animation */
+}
+
+#loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  z-index: 9999;
+  /* Ensure it's above the overlay */
+}
+
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+#detail-view {
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.classDeselected {
+  opacity: 0.2;
+}
+
+#model-accuracy {
+  margin-left: 16px; 
+ }
+
+.pr-0{
+  padding-right:0px;
+}

@@ -1,0 +1,41 @@
+{
+  "scripts": {
+    "build": "webpack --watch --mode development",
+    "serve": "webpack serve --mode development"
+  },
+  "dependencies": {
+    "@saehrimnir/druidjs": "^0.7.3",
+    "@types/d3": "^7.4.0",
+    "axios": "^1.6.7",
+    "bootstrap": "^5.3.2",
+    "d3": "^7.8.5",
+    "d3-flextree": "^2.1.2",
+    "pixi.js": "^8.5.1",
+    "pixi-viewport": "^5.0.3",
+    "split.js": "^1.6.5"
+  },
+  "devDependencies": {
+    "@types/d3-flextree": "^2.1.4",
+    "html-webpack-plugin": "^5.5.3",
+    "ts-loader": "^9.5.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2",
+    "webpack": "^5.90.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "name": "randomforestvis",
+  "description": "This repository contains the code for the Random Forest visual analytics system.",
+  "version": "1.0.0",
+  "main": "webpack.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamDecode/RandomForestVis.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamDecode/RandomForestVis/issues"
+  },
+  "homepage": "https://github.com/iamDecode/RandomForestVis#readme"
+}
