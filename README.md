@@ -53,8 +53,10 @@ Build with:
 ```
 $ npm run build
 ```
+You can cancel this with "ctrl+c" once you see the message "Webpack 5.90.1 compiled succesfully in XXXX ms".
 
-And run a development server with:
+
+Then run the development server with:
 ```
 $ cd backend/
 $ py -3.12 fastapi-rf.py
