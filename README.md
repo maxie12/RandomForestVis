@@ -27,6 +27,8 @@ Create a virtual environemnt with:
 py -3.12 -m venv random-forest-backend
 ```
 
+Note: If you only have 1 version of python installed, you can use ```python``` instead of ```py -3.12```
+
 Activation: 
 ```
 source random-forest-backend/bin/activate
